@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12">
+            <form action="" method="post" id="registrationForm">
+                <table>
+                    <tr>
+                        <th>First Name</th>
+                        <td>
+                            <input type="text" name="firstName" id="firstName">
+                            <span id="firstNameError" style="color: red;font-style: italic"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Last Name</th>
+                        <td>
+                            <input type="text" name="lastName" id="lastName">
+                            <span id="lastNameError"  style="color: red;font-style: italic"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Email Address</th>
+                        <td>
+                            <input type="email" name="email" id="email">
+                            <span id ="emailError"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Password</th>
+                        <td>
+                            <input type="password" name="password" id="password">
+                            <span id="passwordError"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Confirm Password</th>
+                        <td>
+                            <input type="password" name="conpassword" id="conpassword">
+                            <span id ="conpasswordError"></span>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th>District Name</th>
+                        <td>
+                            <select>
+                                <option>-----Select District------</option>
+                                <option id="dhaka" value="dhaka">Dhaka</option>
+                                <option id="chittagong" value="chittagong">Chittagong</option>
+                                <option id="khulna" value="khulna">Khulna</option>
+                                <option id="cumilla" value="cumilla">Cumilla</option>
+                            </select>
+                            <span id="districtError"></span>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th></th>
+                        <td>
+                            <input type="submit" name="btn" id="btn">
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/my-script.js"></script>
+</body>
+</html>
